@@ -95,5 +95,3 @@ Todo Histórico de transações deve ser armazenado e consultado.
 Aporte - Entrada de valores diretamente na Conta Matriz, através de uma transação qualquer.
 
 Transferência – Valores movimentados entre contas, onde uma é debitada e a outra é creditada.
-
-Transferência – Valores movimentados entre contas, onde uma é debitada e a outra é creditada.
