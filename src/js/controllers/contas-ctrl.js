@@ -11,9 +11,9 @@ angular.module('RDash')
             nascimento: '04/04/1995',
             razao: 'N/A'
         },{
-            id: '242424242424',
+            id: '12345678912',
             nome: 'Jose',
-            nascimento: '24/12/1924',
+            nascimento: '12/12/1995',
             razao: 'N/A'
         }];
         console.log($scope.contas);
