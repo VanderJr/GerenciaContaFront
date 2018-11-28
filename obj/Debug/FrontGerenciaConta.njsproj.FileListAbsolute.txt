@@ -1,0 +1,3 @@
+C:\Users\vande\Documents\Projetos\GerenciaContas\rdash-angular-master\obj\Debug\FrontGerenciaConta.njsprojAssemblyReference.cache
+C:\Users\vande\Documents\Projetos\GerenciaContas\rdash-angular-master\obj\Debug\FrontGerenciaConta.njsproj.CoreCompileInputs.cache
+C:\Users\vande\Documents\Projetos\GerenciaContas\rdash-angular-master\bin\Microsoft.NodejsTools.WebRole.dll

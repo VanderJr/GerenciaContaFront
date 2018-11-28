@@ -1,0 +1,62 @@
+<div class="row">
+    <div class="col-lg-8">
+      <rd-widget>
+        <rd-widget-header icon="fa-tasks" title="Transações Efetuadas">
+        </rd-widget-header>
+        <rd-widget-body classes="medium no-padding">
+          <div class="table-responsive">
+                <table class="table">
+						<thead><th>Origem</th><th>Destino</th><th>Status</th></thead>
+						<tbody data-ng-controller="TransacoesCtrl" data-ng-show="transacoes.length">
+							<tr data-ng-repeat="transacao in transacoes">
+								<td>{{transacao.origem}}</td>
+								<td>{{transacao.destino}}</td>
+								<td><span class="text-{{transacao.status}}"><i class="fa fa-{{transacao.status}}"></i></span></td>
+							</tr>
+						</tbody>
+                </table>
+          </div>      
+        </rd-widget-body>
+      </rd-widget>
+    </div>
+    <div class="col-lg-4">
+            <rd-widget>
+              <rd-widget-header icon="fa-plus" title="Criar Nova">
+              </rd-widget-header>
+              <rd-widget-body classes="medium no-padding">
+                    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                            <label>CPF/CNPJ</label>
+                            <input type="number" formControlName="id" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.id.errors }" />
+                            <div *ngIf="submitted && f.id.errors" class="invalid-feedback">
+                                <div *ngIf="f.id.errors.required">Campo obrigatório</div>
+                            </div>
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" formControlName="nome" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nome.errors }" />
+                            <div *ngIf="submitted && f.nome.errors" class="invalid-feedback">
+                                <div *ngIf="f.nome.errors.required">Campo obrigatório</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Data Nascimento</label>
+                            <input type="text" formControlName="nascimento" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.nascimento.errors }" />
+                            <div *ngIf="submitted && f.nascimento.errors" class="invalid-feedback">
+                                <div *ngIf="f.nascimento.errors.required">Campo obrigatório</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Razão Social</label>
+                            <input type="razao" formControlName="razao" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.razao.errors }" />
+                            <div *ngIf="submitted && f.razao.errors" class="invalid-feedback">
+                                <div *ngIf="f.razao.errors.required">Campo obrigatório</div>
+                            </div>
+                        </div>
+                    <button [disabled]="loading" class="btn btn-primary">Cadastrar</button>
+                    </form>
+                    </div>
+              </rd-widget-body>
+            </rd-widget>
+          </div>
+
+  </div>
+  

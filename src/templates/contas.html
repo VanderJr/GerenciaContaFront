@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-lg-8">
+        <rd-widget>
+            <rd-widget-header icon="fa-users" title="Contas">
+            </rd-widget-header>
+            <rd-widget-body classes="medium no-padding">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr><th class="text-center">CPF/CNPJ</th><th>Nome</th><th>Data Nascimento</th><th>Razão Social</th></tr>
+                        </thead>
+                        <tbody data-ng-controller="ContasCtrl" data-ng-show="contas.length">
+                            <tr data-ng-repeat="conta in contas"><td class="text-center">{{conta.id}}</td><td>{{conta.nome}}</td><td>{{conta.nascimento}}</td><td>{{conta.razao}}</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </rd-widget-body>
+        <rd-widget>
+    </div>
+    <div class="col-lg-4">
+            <rd-widget>
+                <rd-widget-header icon="fa-plus" title="Criar Nova">
+                </rd-widget-header>
+                <rd-widget-body classes="medium no-padding">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr><th class="text-center">CPF/CNPJ</th><th>Nome</th><th>Data Nascimento</th><th>Razão Social</th></tr>
+                            </thead>
+                            <tbody data-ng-controller="ContasCtrl" data-ng-show="contas.length">
+                                <tr data-ng-repeat="conta in contas"><td class="text-center">{{conta.id}}</td><td>{{conta.nome}}</td><td>{{conta.nascimento}}</td><td>{{conta.razao}}</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </rd-widget-body>
+            <rd-widget>
+        </div>
+</div>
